@@ -6,6 +6,7 @@ body {
     align-items: center;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    white-space: nowrap;
 }
 
 h1 {
@@ -34,6 +35,7 @@ h1 {
     width: 50%;
     height: 100%;
     top: 0;
+    overflow: hidden;
 }
 
 .split.left {
@@ -50,4 +52,24 @@ h1 {
     background-color: lightblue;
     background-image: url("https://s7d1.scene7.com/is/image/dish/Samsung_Galaxy_S24_Ultra_TitaniumBlack_Lockup_RGB?$ProductBase$&fmt=webp-alpha");
     background-size: cover;
+}
+
+.active-left .left {
+    width: 75%;
+}
+
+.active-left .right {
+    width: 25%;
+}
+
+.active-right .left {
+    width: 25%;
+}
+
+.active-right .right {
+    width: 75%;
+}
+
+.left , .right {
+    transition: width 2s ease-in-out;
 }
